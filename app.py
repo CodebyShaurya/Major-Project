@@ -147,7 +147,7 @@ def overlay(original_bgr: np.ndarray, colour_mask: np.ndarray, alpha: float = 0.
 
 # ─── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Land Cover AI · Segmentation",
+    page_title="geoLens · Segmentation",
     page_icon="🛰️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -284,8 +284,7 @@ st.markdown("""
 # ─── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## ⚙️ Settings")
-    overlay_alpha = st.slider("Overlay opacity", 0.0, 1.0, 0.45, 0.05,
-                              help="Blend ratio of colour mask over original image")
+    overlay_alpha = 0.45
     show_overlay  = st.toggle("Show blended overlay", value=True)
     st.divider()
 
@@ -322,7 +321,7 @@ with tab_home:
     # ─── Hero Banner ──────────────────────────────────────────────────────────────
     st.markdown("""
     <div class="hero">
-      <h1>🛰️ Land Cover AI</h1>
+      <h1>🛰️ geoLens</h1>
       <p>
         Point-supervised semantic segmentation of high-resolution aerial imagery using a custom U-Net.<br>
         Upload a <b>.tif</b>, <b>.jpg</b>, or <b>.png</b> aerial tile and get instant land-cover predictions.
@@ -332,7 +331,7 @@ with tab_home:
     
     st.markdown("""
     <div class="card">
-        <h3 style="color: #0f172a; margin-top: 0;">Welcome to Land Cover AI</h3>
+        <h3 style="color: #0f172a; margin-top: 0;">Welcome to geoLens</h3>
         <p>This application uses deep learning to segment high-resolution aerial images into five distinct classes: Background, Building, Woodland, Water, and Road.</p>
         <p>Navigate to the <b>Predict</b> tab to try it out, or check the <b>Feature</b> tab to learn more about the technology behind it.</p>
     </div>
@@ -342,7 +341,7 @@ with tab_feature:
     st.markdown("""
     <div class="card">
         <h2 style="color: #0f172a; margin-top: 0;">✨ Key Features</h2>
-        <p>Discover the powerful capabilities of our Land Cover AI system.</p>
+        <p>Discover the powerful capabilities of our geoLens system.</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -381,6 +380,9 @@ with tab_dev:
         <h1 style="color: #2563eb; font-weight: 800; font-size: 2.5rem; margin-top: 1rem;">Shaurya</h1>
         <p style="font-size: 1.2rem; color: #475569; margin-top: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
             A passionate software engineer focused on applied AI, computer vision, and building impactful digital experiences.
+        </p>
+        <p style="font-size: 1.1rem; margin-top: 1rem;">
+            <a href="https://github.com/codebyShaurya" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">GitHub: codebyShaurya</a>
         </p>
         <hr style="margin: 3rem auto; opacity: 0.5; max-width: 200px; border-color: #cbd5e1;">
         <p style="color: #64748b; font-weight: 500;">
