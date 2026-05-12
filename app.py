@@ -147,7 +147,7 @@ def overlay(original_bgr: np.ndarray, colour_mask: np.ndarray, alpha: float = 0.
 
 # ─── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="geoLens · Segmentation",
+    page_title="GeoLens · Segmentation",
     page_icon="🛰️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -321,7 +321,7 @@ with tab_home:
     # ─── Hero Banner ──────────────────────────────────────────────────────────────
     st.markdown("""
     <div class="hero">
-      <h1>🛰️ geoLens</h1>
+      <h1>🛰️ GeoLens</h1>
       <p>
         Point-supervised semantic segmentation of high-resolution aerial imagery using a custom U-Net.<br>
         Upload a <b>.tif</b>, <b>.jpg</b>, or <b>.png</b> aerial tile and get instant land-cover predictions.
@@ -331,7 +331,7 @@ with tab_home:
     
     st.markdown("""
     <div class="card">
-        <h3 style="color: #0f172a; margin-top: 0;">Welcome to geoLens</h3>
+        <h3 style="color: #0f172a; margin-top: 0;">Welcome to GeoLens</h3>
         <p>This application uses deep learning to segment high-resolution aerial images into five distinct classes: Background, Building, Woodland, Water, and Road.</p>
         <p>Navigate to the <b>Predict</b> tab to try it out, or check the <b>Feature</b> tab to learn more about the technology behind it.</p>
     </div>
@@ -341,7 +341,7 @@ with tab_feature:
     st.markdown("""
     <div class="card">
         <h2 style="color: #0f172a; margin-top: 0;">✨ Key Features</h2>
-        <p>Discover the powerful capabilities of our geoLens system.</p>
+        <p>Discover the powerful capabilities of our GeoLens system.</p>
     </div>
     """, unsafe_allow_html=True)
     
